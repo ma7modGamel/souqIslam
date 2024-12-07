@@ -5,12 +5,13 @@ plugins {
 
 android {
     namespace = "com.safwa.souqclean"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.safwa.souqclean"
         minSdk = 28
-        targetSdk = 34
+        //noinspection EditedTargetSdkVersion
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
