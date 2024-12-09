@@ -1,13 +1,11 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.SouqClean" parent="Theme.Material3.Light.NoActionBar">
-        <!-- Primary brand color. -->
+<?xml version="1.0" encoding="utf-8"?>
 
-        <!-- Customize your theme here. -->
-    </style>
-    
-    
-    <style name="Theme.MainActivity" parent="Theme.SouqClean">
+<resources>
+
+    <style name="Theme.MainActivity" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/primaryColor</item>
+        <item name="postSplashScreenTheme">@style/Theme.SouqClean</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/launch_background</item>
 
         <item name="android:statusBarColor">@color/white</item>
         <item name="android:windowLightStatusBar">true</item>
