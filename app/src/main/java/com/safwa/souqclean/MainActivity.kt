@@ -5,7 +5,9 @@ import android.app.Activity
 import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.view.ViewGroup
 import android.view.animation.AnticipateInterpolator
+import android.widget.Button
 import android.window.SplashScreen
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -16,6 +18,7 @@ class MainActivity :Activity() {
         initSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
     }
 
     private fun initSplashScreen() {
