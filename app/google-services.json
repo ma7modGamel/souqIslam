@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "414007564280",
+    "project_id": "souq-9c793",
+    "storage_bucket": "souq-9c793.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:414007564280:android:420ca2cf589e8d5acaa80d",
+        "android_client_info": {
+          "package_name": "com.safwa.souqclean"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEHchtVf1nRkiOTIrXmoULQfPVBwSINJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
