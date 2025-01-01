@@ -13,6 +13,7 @@ firebaseStorage = "21.0.1"
 firebaseFirestore = "25.1.1"
 firebaseCrashlytics = "19.3.0"
 googleFirebaseCrashlytics = "3.0.2"
+reactivenetwork = "0.13.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -25,6 +26,7 @@ material = { group = "com.google.android.material", name = "material", version.r
 firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 firebase-crashlytics = { group = "com.google.firebase", name = "firebase-crashlytics", version.ref = "firebaseCrashlytics" }
+reactivenetwork = { group = "com.github.pwittchen", name = "reactivenetwork", version.ref = "reactivenetwork" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

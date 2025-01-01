@@ -46,6 +46,9 @@ dependencies {
     implementation(libs.firebase.storage)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.crashlytics)
+
+    //third party lib to observe to network
+    implementation(libs.reactivenetwork)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

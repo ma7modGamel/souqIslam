@@ -11,6 +11,7 @@ import android.widget.Button
 import android.window.SplashScreen
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import com.safwa.souqclean.utils.CrashlyticsUtils
 
 class MainActivity :Activity() {
 
@@ -18,6 +19,10 @@ class MainActivity :Activity() {
         initSplashScreen()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+    CrashlyticsUtils.sendLogToCrashlytics("OpenCrash","button","key",",crash")
+
 
     }
 
