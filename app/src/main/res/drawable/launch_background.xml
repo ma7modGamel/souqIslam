@@ -5,8 +5,8 @@
         android:drawable="@color/primaryColor"/>
 
     <item
-        android:height="150dp"
-        android:width="150dp"
+        android:height="100dp"
+        android:width="100dp"
         android:gravity="center"
         android:drawable="@drawable/ic_launcher"
 
