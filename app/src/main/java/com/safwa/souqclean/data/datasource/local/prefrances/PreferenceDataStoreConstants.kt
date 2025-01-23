@@ -1,4 +1,4 @@
-package com.safwa.souqclean.data.prefrances
+package com.safwa.souqclean.data.datasource.local.prefrances
 
 import androidx.datastore.preferences.core.booleanPreferencesKey
 import androidx.datastore.preferences.core.intPreferencesKey
@@ -10,10 +10,7 @@ object PreferenceDataStoreConstants {
     val AGE_KEY = intPreferencesKey("AGE_KEY")
     val NAME_KEY = stringPreferencesKey("NAME_KEY")
     val MOBILE_NUMBER = longPreferencesKey("MOBILE_NUMBER")
-
-
-
     val LANGUAGE_KEY = stringPreferencesKey("LANGUAGE_KEY")
-    val IS_LOGGED_IN_KEY = booleanPreferencesKey("LOGGED_IN_KEY")
+    val IS_USER_LOGGED_IN = booleanPreferencesKey("is_user_logged_in")
 
 }

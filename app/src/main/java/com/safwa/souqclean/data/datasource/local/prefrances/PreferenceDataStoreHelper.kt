@@ -1,6 +1,7 @@
-package com.safwa.souqclean.data.prefrances
+package com.safwa.souqclean.data.datasource.local.prefrances
 
 import android.content.Context
+import androidx.datastore.core.DataStore
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.emptyPreferences
@@ -11,10 +12,11 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.map
 import java.io.IOException
 
-private val Context.dataStore by preferencesDataStore(
-    name = "PreferenceDataStore"
-)
-class PreferenceDataStoreHelper(context: Context):IPreferenceDataStoreAPI {
+
+//private val Context.dataStore  by preferencesDataStore(name = "PreferenceDataStore")
+private val Context.dataStore :DataStore<Preferences> by preferencesDataStore(name = "PreferenceDataStore")
+
+class PreferenceDataStoreHelper(context: Context): IPreferenceDataStoreAPI {
 
     // dataSource access the DataStore file and does the manipulation based on our requirements.
     private val dataSource = context.dataStore

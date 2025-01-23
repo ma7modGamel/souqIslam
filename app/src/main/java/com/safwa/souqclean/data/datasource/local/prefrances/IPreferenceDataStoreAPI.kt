@@ -1,4 +1,4 @@
-package com.safwa.souqclean.data.prefrances
+package com.safwa.souqclean.data.datasource.local.prefrances
 
 import androidx.datastore.preferences.core.Preferences
 import kotlinx.coroutines.flow.Flow
