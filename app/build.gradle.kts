@@ -114,11 +114,25 @@ dependencies {
 
 
     implementation(libs.kotlinx.coroutines.android)
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.kotlinx.coroutines.core)
 
 //
 //    implementation(libs.protobuf.kotlin)
 //    implementation(libs.protobuf.java)
 
+
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.converter.scalars)
+    implementation(libs.gson)
+    implementation(libs.okhttp)
+    implementation(libs.logging.interceptor)
+    implementation(libs.okhttp.urlconnection)
+
+
+    debugImplementation(libs.chucker)
+    releaseImplementation(libs.chucker.no.op)
 
 }

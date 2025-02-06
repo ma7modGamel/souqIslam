@@ -7,12 +7,11 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnticipateInterpolator
-import android.widget.Toast
 import androidx.core.animation.doOnEnd
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.safwa.souqclean.R
-import com.safwa.souqclean.data.prefrances.PreferenceDataStoreConstants
-import com.safwa.souqclean.data.prefrances.PreferenceDataStoreHelper
+import com.safwa.souqclean.data.datasource.local.prefrances.PreferenceDataStoreConstants
+import com.safwa.souqclean.data.datasource.local.prefrances.PreferenceDataStoreHelper
 import com.safwa.souqclean.ui.login.AuthActivity
 import com.safwa.souqclean.utils.CrashlyticsUtils
 import kotlinx.coroutines.CoroutineScope
@@ -44,7 +43,7 @@ class HomeActivity :Activity() {
 
         CoroutineScope(Dispatchers.IO).launch {
             PreferenceDataStoreHelper(baseContext).getPreference(
-                PreferenceDataStoreConstants.IS_LOGGED_IN_KEY,
+                PreferenceDataStoreConstants.IS_USER_LOGGED_IN,
                 false
             )
         }

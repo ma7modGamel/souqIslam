@@ -14,7 +14,7 @@ import java.io.IOException
 
 
 //private val Context.dataStore  by preferencesDataStore(name = "PreferenceDataStore")
-private val Context.dataStore :DataStore<Preferences> by preferencesDataStore(name = "PreferenceDataStore")
+val Context.dataStore :DataStore<Preferences> by preferencesDataStore(name = "PreferenceDataStore")
 
 class PreferenceDataStoreHelper(context: Context): IPreferenceDataStoreAPI {
 

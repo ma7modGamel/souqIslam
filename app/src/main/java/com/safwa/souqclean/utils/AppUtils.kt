@@ -19,8 +19,8 @@ class AppUtils {
         }
     }
 
-    private fun restartWithNotification(restart: String, context: Context) {
-        Toast.makeText(context, "MSG : $restart", Toast.LENGTH_SHORT).show()
+    private fun restartWithNotification(text: String, context: Context) {
+        Toast.makeText(context, "MSG : $text", Toast.LENGTH_SHORT).show()
         restartActivity(context)
     }
 }
