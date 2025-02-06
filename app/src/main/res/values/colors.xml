@@ -11,5 +11,8 @@
 
     <color name="primaryColor">#40BFFF</color>
     <color name="primaryColorDark">#9098B1</color>
+    <color name="primaryText">#223263</color>
+    <color name="alertText">#FB7181</color>
+    <color name="borderGray">#EBF0FF</color>
 
 </resources>

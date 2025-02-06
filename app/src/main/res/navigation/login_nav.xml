@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+
+        android:id="@+id/loginFragment"
+        android:name="com.safwa.souqclean.ui.login.fragments.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgetPasswordFragment"
+            app:destination="@id/forgetPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.safwa.souqclean.ui.login.fragments.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.safwa.souqclean.ui.login.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+</navigation>
