@@ -1,4 +1,4 @@
-package com.safwa.souqclean.ui.login.viewmodel
+package com.safwa.souqclean.ui.auth.viewmodel
 
 import androidx.lifecycle.ViewModel
 

@@ -23,13 +23,14 @@ import kotlinx.coroutines.flow.map
 
 class UserPreferenceRepositoryImpl(private val context: Context) : IUserPreferenceRepository {
 
-    val isUserLoggedIn: Flow<Boolean> =
-        context.dataStore.data.map { preferencesDataStore ->
-            preferencesDataStore[IS_USER_LOGGED_IN] ?: false
+
+
+    override suspend fun isUserLoggedIn(): Flow<Boolean> {
+        TODO("Not yet implemented")
+        return context.dataStore.data.map {
+            preferencesDataStore -> preferencesDataStore[IS_USER_LOGGED_IN] ?: false
         }
 
-    override suspend fun isUserLoggedIn(): Boolean {
-        TODO("Not yet implemented")
     }
 
     override suspend fun saveUserLoggedInStatus(isLoggedIn: Boolean) {
@@ -38,7 +39,7 @@ class UserPreferenceRepositoryImpl(private val context: Context) : IUserPreferen
         }
     }
 
-    override suspend fun getUserData(): UserData? {
+    override suspend fun getUserData(): Flow<UserData?> {
         TODO("Not yet implemented")
     }
 

@@ -2,12 +2,7 @@ package com.safwa.souqclean
 
 import android.app.Application
 import android.content.Context
-import android.content.res.Configuration
-import android.content.res.Resources
-import android.os.Build
-import android.os.LocaleList
-import android.util.Log
-import android.view.View
+
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import com.github.pwittchen.reactivenetwork.library.ReactiveNetwork
@@ -61,14 +56,11 @@ class MyApplication : Application() {
 
 
     private fun listenToNetworkConnectivity() {
-
 //        val receiver = ComponentName(this,DeviceBootReciver::class.java)
 //        packageManager.setComponentEnabledSettings(receiver,
 //            PackageManager.COMPONENT_ENABLED_STATE_ENABLED,
 //            PackageManager.DONT_KILL_APP
 //        )
-
-
         ReactiveNetwork.observeInternetConnectivity()
             .subscribeOn(Schedulers.io())
             // anything else what you can do with RxJava
@@ -87,6 +79,7 @@ class MyApplication : Application() {
             }
 
     }
+
 
 
 
@@ -111,9 +104,7 @@ class MyApplication : Application() {
         }
     */
     companion object {
-
         private const val TAG = "MyApplication"
-
         private lateinit var instance: MyApplication
         lateinit var myAppContext: Context
         fun getInstance(): MyApplication {

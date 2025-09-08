@@ -7,7 +7,7 @@ import retrofit2.http.Field
 import retrofit2.http.POST
 
 interface AuthService {
-    @POST("login")
+    @POST("auth")
     suspend fun login(
         @Field("name") name: String,
         @Field("password") password: String

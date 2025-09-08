@@ -1,9 +1,9 @@
-package com.safwa.souqclean.ui.login
+package com.safwa.souqclean.ui.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.safwa.souqclean.R
-import com.safwa.souqclean.ui.login.fragments.LoginFragment
+import com.safwa.souqclean.ui.auth.fragments.LoginFragment
 
 class AuthActivity : AppCompatActivity() {
 

@@ -1,4 +1,4 @@
-package com.safwa.souqclean.ui.login.fragments
+package com.safwa.souqclean.ui.auth.fragments
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.safwa.souqclean.R
 
-import com.safwa.souqclean.ui.login.viewmodel.LoginViewModel
+import com.safwa.souqclean.ui.auth.viewmodel.LoginViewModel
 
 class LoginFragment : Fragment() {
 

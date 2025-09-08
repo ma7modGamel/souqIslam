@@ -12,7 +12,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.safwa.souqclean.R
 import com.safwa.souqclean.data.datasource.local.prefrances.PreferenceDataStoreConstants
 import com.safwa.souqclean.data.datasource.local.prefrances.PreferenceDataStoreHelper
-import com.safwa.souqclean.ui.login.AuthActivity
+import com.safwa.souqclean.ui.auth.AuthActivity
 import com.safwa.souqclean.utils.CrashlyticsUtils
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

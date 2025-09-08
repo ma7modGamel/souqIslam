@@ -6,7 +6,7 @@
     <data>
         <variable
             name="loginVmodel"
-            type="com.safwa.souqclean.ui.login.viewmodel.LoginViewModel" />
+            type="com.safwa.souqclean.ui.auth.viewmodel.LoginViewModel" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:background="@color/white"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.login.fragments.LoginFragment">
+        tools:context=".ui.auth.fragments.LoginFragment">
 
         <ScrollView
             android:layout_width="match_parent"
